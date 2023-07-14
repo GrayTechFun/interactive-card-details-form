@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 40em;
+  margin: 0 auto;
+  background-color: white;
+  height: 100vh;
+}
+
+.top {
+  background-image: url(../images/bg-main-mobile.png);
+  height: 22em;
+}
+
+.bottom {
+  height: 40em;
+  margin-top: 8em;
+}
+.back {
+  background-image: url(../images/bg-card-back.png);
+  height: 20em;
+  background-size: 28em;
+  background-repeat: no-repeat;
+  background-position: 1.5em;
+  background-position-x: 10em;
+}
+
+.back p {
+  padding-top: 9.3em;
+  padding-left: 32em;
+  color: white;
+}
+
+.front {
+  background-image: url(../images/bg-card-front.png);
+  height: 20em;
+  background-size: 28em;
+  background-repeat: no-repeat;
+  margin-top: -9em;
+  background-position-x: 4em;
+}
+
+.front img {
+  width: 5em;
+  margin-top: 2em;
+  margin-left: 6em;
+}
+
+.front p {
+  color: white;
+}
+
+h2 {
+  color: white;
+  margin-top: 2em;
+  margin-left: 3em;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.name {
+  margin-right: 5em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: hsl(278, 68%, 11%);
+}
+
+.column {
+  margin-bottom: 2em;
+}
+
+input {
+  width: 18em;
+  height: 2.5em;
+  border-radius: 0.5em;
+  border: 1px solid gray;
+  padding-left: 1em;
+  font-size: 2rem;
+  margin-top: 0.5em;
+}
+
+.time {
+  display: flex;
+  gap: 1em;
+}
+
+.mm {
+  width: 4em;
+}
+
+.yy {
+  width: 4em;
+}
+
+.cvc {
+  width: 9em;
+}
+
+button {
+  width: 27em;
+  height: 4em;
+  color: white;
+  border-style: none;
+  border-radius: 0.5em;
+  background-color: #1a0824;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .top {
+    width: 40em;
+    height: auto;
+    background-image: url(../images/bg-main-desktop.png);
+    margin-left: -25em;
+    margin-right: 20em;
+    position: relative;
+  }
+
+  .back {
+    margin-top: 25em;
+    margin-right: -4em;
+    margin-left: 16em;
+    width: 45em;
+  }
+
+  .front {
+    margin-left: 17em;
+    position: absolute;
+    border-radius: 0.5em;
+    margin-top: -35em;
+  }
+
+  .name {
+    margin-left: 6em;
+    gap: 12em;
+  }
+}
